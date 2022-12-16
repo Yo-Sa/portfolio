@@ -1,38 +1,489 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 95px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #F3F3F3;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contents-nav {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 40px;
+    background: #eee;
+    box-sizing: border-box;
+    box-shadow: 0 3px 6px #0000003c; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contents-nav p {
+    display: inline-block;
+    width: 20%;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.contents-nav p:hover {
+    color: #768DC6;
+    font-size: 20px;
+	font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.contents-title {
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title-header {
+    background-color: #768DC6;
+    position: relative;
+}
+
+.title-header img {
+    width: 50%;
+    /* position: relative; */
+    /* height: 480px; */
+}
+
+.title-header p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ffcb2d;
+    text-shadow: 5px 6px 7px #808080;
+    font-size: 5rem;
+    transform: translate(-50%, -50%);
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.section-title {
+    font-size: 50px;
+}
+
+/* プロフィール */
+
+.p-icon {
+    display: flex;
+}
+
+.p-icon img {
+    border-radius: 50%;
+    position: relative;
+    margin: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+/* skill */
+
+.skills {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 100px;
+}
+
+.skills div {
+    background-image: linear-gradient(90deg, #768DC6, #c7d2ee);
+}
+
+/* SKILL-design*/
+
+.design {
+    border: 1px solid #93b4f2d4;
+    text-shadow: 1px 2px 3px #808080;
+    width: 32%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+
+.design table {
+    margin: 0 auto;
+}
+
+.rating-html{
+    position: relative;
+    display: inline-block;
+}
+.rating-html:before,
+.rating-html:after{
+    content: "★★★★★";
+}
+.rating-html:before{
+    color: #ccc;
+}
+.rating-html:after{
+    position: absolute;
+    left:0;
+    top:0;
+    color: #ffcb2d;
+    overflow: hidden;
+    width: 3.5em;
+}
+
+.rating-css{
+    position: relative;
+    display: inline-block;
+}
+.rating-css:before,
+.rating-css:after{
+    content: "★★★★★";
+}
+.rating-css:before{
+    color: #ccc;
+}
+.rating-css:after{
+    position: absolute;
+    left:0;
+    top:0;
+    color: #ffcb2d;
+    overflow: hidden;
+    width: 3.5em;
+}
+
+/* SKILL-fornt*/
+
+.front {
+    border: 1px solid #93b4f2d4;
+    text-shadow: 1px 2px 3px #808080;
+    width: 32%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+
+.front table {
+    margin: 0 auto;
+}
+
+.rating-js{
+    position: relative;
+    display: inline-block;
+}
+.rating-js:before,
+.rating-js:after{
+    content: "★★★★★";
+}
+.rating-js:before{
+    color: #ccc;
+}
+.rating-js:after{
+    position: absolute;
+    left:0;
+    top:0;
+    color: #ffcb2d;
+    overflow: hidden;
+    width: 3em;
+}
+
+.rating-react{
+    position: relative;
+    display: inline-block;
+}
+.rating-react:before,
+.rating-react:after{
+    content: "★★★★★";
+}
+.rating-react:before{
+    color: #ccc;
+}
+.rating-react:after{
+    position: absolute;
+    left:0;
+    top:0;
+    color: #ffcb2d;
+    overflow: hidden;
+    width: 3em;
+}
+
+/* SKILL-back*/
+
+.back {
+    border: 1px solid #93b4f2d4;
+    text-shadow: 1px 2px 3px #808080;
+    width: 32%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+
+.back table {
+    margin: 0 auto;
+}
+
+.rating-laravel{
+    position: relative;
+    display: inline-block;
+}
+.rating-laravel:before,
+.rating-laravel:after{
+    content: "★★★★★";
+}
+.rating-laravel:before{
+    color: #ccc;
+}
+.rating-laravel:after{
+    position: absolute;
+    left:0;
+    top:0;
+    color: #ffcb2d;
+    overflow: hidden;
+    width: 3em;
+}
+
+/* SKILL-db*/
+
+.db {
+    border: 1px solid #93b4f2d4;
+    text-shadow: 1px 2px 3px #808080;
+    width: 32%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 0.5rem;
+}
+
+.db table {
+    margin: 0 auto;
+}
+
+.rating-mysql{
+    position: relative;
+    display: inline-block;
+}
+.rating-mysql:before,
+.rating-mysql:after{
+    content: "★★★★★";
+}
+.rating-mysql:before{
+    color: #ccc;
+}
+.rating-mysql:after{
+    position: absolute;
+    left:0;
+    top:0;
+    color: #ffcb2d;
+    overflow: hidden;
+    width: 3.5em;
+}
+
+.rating-postgres{
+    position: relative;
+    display: inline-block;
+}
+.rating-postgres:before,
+.rating-postgres:after{
+    content: "★★★★★";
+}
+.rating-postgres:before{
+    color: #ccc;
+}
+.rating-postgres:after{
+    position: absolute;
+    left:0;
+    top:0;
+    color: #ffcb2d;
+    overflow: hidden;
+    width: 3.5em;
+}
+
+/* SKILL-server*/
+
+.server {
+    border: 1px solid #93b4f2d4;
+    text-shadow: 1px 2px 3px #808080;
+    width: 32%;
+    /* background-color: #768DC6; */
+    background-image: linear-gradient(90deg, #768DC6, #c7d2ee);
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 0.5rem;
+}
+
+.server table {
+    margin: 0 auto;
+}
+
+.rating-xserv{
+    position: relative;
+    display: inline-block;
+}
+.rating-xserv:before,
+.rating-xserv:after{
+    content: "★★★★★";
+}
+.rating-xserv:before{
+    color: #ccc;
+}
+.rating-xserv:after{
+    position: absolute;
+    left:0;
+    top:0;
+    color: #ffcb2d;
+    overflow: hidden;
+    width: 2.5em;
+}
+
+.rating-aws{
+    position: relative;
+    display: inline-block;
+}
+.rating-aws:before,
+.rating-aws:after{
+    content: "★★★★★";
+}
+.rating-aws:before{
+    color: #ccc;
+}
+.rating-aws:after{
+    position: absolute;
+    left:0;
+    top:0;
+    color: #ffcb2d;
+    overflow: hidden;
+    width: 2.5em;
+}
+
+/* works */
+
+.works h3 {
+    border-bottom: 7px solid #c21500;
+    border-image: linear-gradient(90deg, #768DC6, #c7d2ee);
+    border-image-slice: 1;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.ec {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+.ec article {
+    width: calc(50% - 5px);
+}
+
+.ec article figure {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.ec article img{
+    width: 100%;
+    
+}
+
+.api {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.api article figure {
+    margin: 0 auto;
+    width: 50%;
+    
+}
+
+.api article img{
+    width: 50%;
+    
+}
+
+.web {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+.web article {
+    width: calc(50% - 5px);
+    /* width: 33%; */
+}
+
+.web article figure {
+    margin: 0 auto;
+    width: 30%;
+}
+
+.web article img{
+    width: 100%;
+    
+}
+
+.git ul{
+    list-style: none;
+}
+
+/* infomaton */
+
+.information h1{
+    font-size: 50px;
+}
+
+.info {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    /* max-width: 1000px; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    padding: 10px 0;
+}
+
+.info article figure {
+    margin: 0 auto;
+    width: 50%;
+    
+}
+
+.info article img{
+    /* width: 100%; */
+    
+}
+
+
+/*  fotter */
+.fotter {
+    background-color: #768DC6;
+}
+
+.fotter-link ul {
+    margin: 0 auto;
+    width: 20%;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+    
+}
+
+.fotter-link ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.copyright{
+    font-size: 8px;
+    margin: 0;
+    padding-bottom: 20px;
 }
