@@ -27,7 +27,7 @@ export const Work = () => {
                 </article>
                 <article>
                     <figure>
-                        <a href="https://yoichise.base.shop/">
+                        <a href="https://yoichise.base.shop">
                             <img src={base} alt="ベイス" />
                         </a>
                         <figcaption className='caption'>
@@ -122,7 +122,7 @@ export const Work = () => {
                         <a href="https://github.com/Yo-Sa/tabmenu.git">Tabmenu</a>
                     </li>
                     <li>
-                        <a href="">Portforio</a>
+                        <a href="https://github.com/Yo-Sa/portfolio.git">Portforio</a>
                     </li>
                 </ul>
             </div>

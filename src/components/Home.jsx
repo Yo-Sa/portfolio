@@ -10,11 +10,15 @@ export const Home = () => {
     return (
         <div>
             <Header />
-            <Profile />
-            <Skill />
-            <Work />
-            <Information />
+            <div className="wrapper">
+                
+                <Profile />
+                <Skill />
+                <Work />
+                <Information />
+            </div>
             <Fotter />
         </div>
     );
+    
 };

@@ -10,16 +10,22 @@ body {
     text-align: center;
 }
 
+.wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
 .contents-nav {
     position: fixed;
     z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 40px;
+    /* padding: 0 40px; */
     background: #eee;
     box-sizing: border-box;
     box-shadow: 0 3px 6px #0000003c; 
+    background-color:rgba(255, 255, 255, 0.8);
 }
 
 .contents-nav p {
@@ -30,7 +36,7 @@ body {
 }
 
 .contents-nav p:hover {
-    color: #768DC6;
+    color: #ffcb2d;
     font-size: 20px;
 	font-weight: bold;
 }
@@ -40,12 +46,14 @@ body {
 }
 
 .title-header {
-    background-color: #768DC6;
+    /* background-color: #768DC6; */
     position: relative;
 }
 
 .title-header img {
-    width: 50%;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
     /* position: relative; */
     /* height: 480px; */
 }
@@ -68,44 +76,81 @@ body {
 
 /* プロフィール */
 
+.profile, .section-skill, .works {
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+}
+
+.profile-text {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
 .p-icon {
-    display: flex;
+    /* display: flex; */
+    /* height: 288px; */
 }
 
 .p-icon img {
     border-radius: 50%;
     position: relative;
-    margin: 10%;
-    margin-top: 0;
-    margin-bottom: 0;
-    
+    margin: 0 auto;
+}
+
+.profile-text {
+    /* margin: 0 auto; */
 }
 
 /* skill */
 
-.skills {
+.skill {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 100px;
+    max-width: 1000px;
+    /* padding: 10px 100px; */
 }
 
-.skills div {
-    background-image: linear-gradient(90deg, #768DC6, #c7d2ee);
+
+.skill th {
+    padding: 0.75rem;
+}
+
+.skill h3 {
+    letter-spacing: 0.12em;
+    font-size: 25px;
+}
+
+.skill-desc {
+    /* flex-basis: calc(100% - 75px - 30px); */
+    /* text-align: center; */
 }
 
 /* SKILL-design*/
 
+.card-top {
+    width: 100%;
+}
+.card {
+    width: 50%;
+}
+
 .design {
-    border: 1px solid #93b4f2d4;
     text-shadow: 1px 2px 3px #808080;
-    width: 32%;
-    margin: 0 auto;
+    /* width: 100%; */
     border-radius: 0.5rem;
 }
 
-.design table {
-    margin: 0 auto;
+.table {
+    width: 100%;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    /* margin: 0 auto; */
 }
 
 .rating-html{
@@ -151,9 +196,8 @@ body {
 /* SKILL-fornt*/
 
 .front {
-    border: 1px solid #93b4f2d4;
     text-shadow: 1px 2px 3px #808080;
-    width: 32%;
+    /* width: 32%; */
     margin: 0 auto;
     border-radius: 0.5rem;
 }
@@ -205,9 +249,8 @@ body {
 /* SKILL-back*/
 
 .back {
-    border: 1px solid #93b4f2d4;
     text-shadow: 1px 2px 3px #808080;
-    width: 32%;
+    /* width: 32%; */
     margin: 0 auto;
     border-radius: 0.5rem;
 }
@@ -239,12 +282,9 @@ body {
 /* SKILL-db*/
 
 .db {
-    border: 1px solid #93b4f2d4;
     text-shadow: 1px 2px 3px #808080;
-    width: 32%;
+    /* width: 32%; */
     margin: 0 auto;
-    margin-top: 10px;
-    margin-right: 10px;
     border-radius: 0.5rem;
 }
 
@@ -295,19 +335,15 @@ body {
 /* SKILL-server*/
 
 .server {
-    border: 1px solid #93b4f2d4;
     text-shadow: 1px 2px 3px #808080;
-    width: 32%;
+    /* width: 32%; */
     /* background-color: #768DC6; */
-    background-image: linear-gradient(90deg, #768DC6, #c7d2ee);
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-left: 10px;
+    /* margin: 0 auto; */
     border-radius: 0.5rem;
 }
 
 .server table {
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .rating-xserv{
@@ -353,11 +389,13 @@ body {
 /* works */
 
 .works h3 {
-    border-bottom: 7px solid #c21500;
-    border-image: linear-gradient(90deg, #768DC6, #c7d2ee);
+    /* border-bottom: 7px solid #c21500; */
+    /* border-image: linear-gradient(90deg, #768DC6, #c7d2ee); */
     border-image-slice: 1;
     width: 50%;
     margin: 0 auto;
+    font-size: 30px;
+    padding-bottom: 50px;
 }
 
 .ec {
@@ -387,26 +425,33 @@ body {
 
 .api {
     margin: 0 auto;
+    margin-top: 50px;
     margin-bottom: 50px;
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0;
+    justify-content: space-between;
+}
+
+.api article {
+    width: calc(50% - 5px);
+    margin: 0 auto;
 }
 
 .api article figure {
     margin: 0 auto;
     width: 50%;
-    
 }
 
 .api article img{
-    width: 50%;
+    width: 100%;
     
 }
 
 .web {
     margin: 0 auto;
+    margin-top: 50px;
     margin-bottom: 50px;
     max-width: 1000px;
     display: flex;
@@ -430,11 +475,61 @@ body {
     
 }
 
-.git ul{
+.git{
+    /* display: flex; */
+    padding-left: 0;
     list-style: none;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.git ul {
+    padding-left: 0;
+}
+
+.git a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 20px;
+    /* cursor: pointer; */
+    display: block;
+}
+
+.git li {
+    background: #333;
+    color: #fff;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.git li::before {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 100%;
+    left: -96%;
+    opacity: 0.3;
+    position: absolute;
+    -webkit-transition: .6s;
+    transition: .6s;
+    top: 0px;
+    width: 100%;
+}
+
+.git li:hover::before {
+    left: 0;
+    pointer-events: none;
 }
 
 /* infomaton */
+
+.information {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 .information h1{
     font-size: 50px;
@@ -443,10 +538,6 @@ body {
 .info {
     margin: 0 auto;
     margin-bottom: 50px;
-    /* max-width: 1000px; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    padding: 10px 0;
 }
 
 .info article figure {
@@ -456,14 +547,17 @@ body {
 }
 
 .info article img{
-    /* width: 100%; */
+    width: 25%;
     
 }
 
 
 /*  fotter */
+
+
 .fotter {
-    background-color: #768DC6;
+    background-color: #d0cccc;
+    width: 100%;
 }
 
 .fotter-link ul {

@@ -1,6 +1,7 @@
-import React from 'react'
+// import React from 'react'
 import topimg from '../images/b.jpg'
 import { Link as Scroll } from 'react-scroll';
+import React, { useEffect, useState, useRef } from "react";
 
 export const Header = () => {
     

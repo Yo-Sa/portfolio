@@ -8,7 +8,7 @@ export const Information = () => {
             <div className='info'>
                 <article>
                     <figure>
-                        <a href="https://aventura-se.com/sato/MailForm01_utf8/">
+                        <a href="https://aventura-se.com/sato/MailForm_utf8/contact.html">
                             <img src={mail} alt="info" />
                         </a>
                         <figcaption className='caption'>
