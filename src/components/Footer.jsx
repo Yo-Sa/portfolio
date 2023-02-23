@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link as Scroll } from 'react-scroll';
 
-export const Fotter = () => {
+export const Footer = () => {
     return (
-        <div className='fotter'>
+        <div className='footer'>
             <div className='inner'>
-                <nav className='fotter-link'>
+                <nav className='footer-link'>
                     <ul>
                         <li>
                             <Scroll to="profile">Profile</Scroll>

@@ -3,7 +3,7 @@ import React from 'react'
 export const Skill = () => {
     return (
         <div className='section-skill'>
-            <h1 className='section-title' id='skill'>Skill</h1>
+            <h1 className='section-title' id='skill'>Skills</h1>
             <div className='skill'>
                 
                 {/* <div className='skills'> */}
@@ -95,7 +95,7 @@ export const Skill = () => {
                                     <th scope='row'>----</th>
                                     <td>----</td>
                                     <td>
-                                        <span className='rating-css'></span>
+                                        {/* <span className='rating-css'></span> */}
                                     </td>
                                 </tr>
                             </tbody>

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    padding-top: 95px;
+    padding-top: 80px;
     font-family:'Times New Roman', Times, serif;
     background-color: #F3F3F3;
 }
@@ -10,23 +10,38 @@ body {
     text-align: center;
 }
 
-.wrapper {
-    max-width: 1320px;
-    margin: 0 auto;
-}
-
-.contents-nav {
+/* .makeStyles-header-1 {
     position: fixed;
     z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
-    /* padding: 0 40px; */
+} */
+
+.makeStyles-appBar-2 {
+    background: #eee;
+}
+
+header h1 {
+    text-align: left;
+}
+
+.wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* .contents-nav {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: #eee;
     box-sizing: border-box;
     box-shadow: 0 3px 6px #0000003c; 
     background-color:rgba(255, 255, 255, 0.8);
-}
+} */
 
 .contents-nav p {
     display: inline-block;
@@ -35,11 +50,11 @@ body {
     cursor: pointer;
 }
 
-.contents-nav p:hover {
+/* .contents-nav p:hover {
     color: #ffcb2d;
     font-size: 20px;
 	font-weight: bold;
-}
+} */
 
 .contents-title {
     text-decoration: none;
@@ -62,8 +77,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    color: #ffcb2d;
-    text-shadow: 5px 6px 7px #808080;
+    color: #fff;
+    background: rgba(56, 40, 79, 0.8);
     font-size: 5rem;
     transform: translate(-50%, -50%);
     letter-spacing: 5px;
@@ -389,8 +404,6 @@ body {
 /* works */
 
 .works h3 {
-    /* border-bottom: 7px solid #c21500; */
-    /* border-image: linear-gradient(90deg, #768DC6, #c7d2ee); */
     border-image-slice: 1;
     width: 50%;
     margin: 0 auto;
@@ -411,6 +424,7 @@ body {
 
 .ec article {
     width: calc(50% - 5px);
+    padding-bottom: 50px;
 }
 
 .ec article figure {
@@ -420,6 +434,7 @@ body {
 
 .ec article img{
     width: 100%;
+    
     
 }
 
@@ -552,15 +567,15 @@ body {
 }
 
 
-/*  fotter */
+/*  footer */
 
 
-.fotter {
-    background-color: #d0cccc;
+.footer {
+    background-color: rgba(56, 40, 79, 0.8);;
     width: 100%;
 }
 
-.fotter-link ul {
+.footer-link ul {
     margin: 0 auto;
     width: 20%;
     font-size: 15px;
@@ -569,15 +584,94 @@ body {
     
 }
 
-.fotter-link ul li {
+.footer-link ul li {
     display: inline-block;
     list-style: none;
     padding: 5px;
     cursor: pointer;
+    color: #fff;
 }
 
 .copyright{
     font-size: 8px;
     margin: 0;
     padding-bottom: 20px;
+    color: #fff;
+}
+
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    /* position: fixed;
+    width: 36px;
+    height: 30px;
+    left:50%;
+    margin-left: 600px;
+    top: 5%; */
+    /* display: none; */
+}
+
+.hum {
+    /* text-align:right; */
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: #005b99;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: white;
+    padding: 3.5em 1.5em 0;
+    font-size: 2.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
 }

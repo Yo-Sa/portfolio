@@ -1,6 +1,6 @@
 import React from 'react'
 import base from '../images/base.png'
-// import eccube from '../images/eccube.png'
+import eccube from '../images/eccube.png'
 import weather from '../images/weather.png'
 import loading from '../images/loading.png'
 import slide from '../images/slideshow.png'
@@ -16,7 +16,7 @@ export const Work = () => {
             <div className='ec'>
                 <article>
                     <figure>
-                        <a href="/">
+                        <a href="http://52.198.175.54/">
                             <img src={laravel} alt="Laravel" />
                         </a>
                         <figcaption className='caption'>
@@ -36,17 +36,17 @@ export const Work = () => {
                         </figcaption>
                     </figure>
                 </article>
-                {/* <article>
+                <article>
                     <figure>
-                        <a href="https://admin.thebase.in/shop_admin/design/preview">
+                        <a href="http://aventura-se.com/sato/ec-cube/">
                             <img src={eccube} alt="ECCUBE" />
                         </a>
                         <figcaption className='caption'>
                             <p className='caption-title'>EC CUBE</p>
-                            <p className='caption-info'> EC CUBEを使用したECサイトです。</p>
+                            <p className='caption-info'>ECCUBEを使用した<br></br>ECサイトです。</p>
                         </figcaption>
                     </figure>
-                </article> */}
+                </article>
             </div>
             <h3>API</h3>
             <div className='api'>
@@ -57,7 +57,7 @@ export const Work = () => {
                         </a>
                         <figcaption className='caption'>
                             <p className='caption-title'>天気予報</p>
-                            <p className='caption-info'>気象庁のAPIを取得しています</p>
+                            <p className='caption-info'>気象庁のAPIを取得<br></br>しています。</p>
                         </figcaption>
                     </figure>
                 </article>
@@ -66,12 +66,12 @@ export const Work = () => {
             <div className='web'>
                 <article>
                     <figure>
-                        <a href="/">
+                        <a href="https://yoichiportfolio.netlify.app/">
                             <img src={portfolio} alt="portfolio" />
                         </a>
                         <figcaption className='caption'>
                             <p className='caption-title'>Portfolio</p>
-                            <p className='caption-info'>作成したポートフォリオのWEBサイトです。</p>
+                            <p className='caption-info'></p>
                         </figcaption>
                     </figure>
                 </article>
