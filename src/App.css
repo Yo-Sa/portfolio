@@ -31,18 +31,6 @@ header h1 {
     margin: 0 auto;
 }
 
-/* .contents-nav {
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #eee;
-    box-sizing: border-box;
-    box-shadow: 0 3px 6px #0000003c; 
-    background-color:rgba(255, 255, 255, 0.8);
-} */
-
 .contents-nav p {
     display: inline-block;
     width: 20%;
@@ -50,18 +38,11 @@ header h1 {
     cursor: pointer;
 }
 
-/* .contents-nav p:hover {
-    color: #ffcb2d;
-    font-size: 20px;
-	font-weight: bold;
-} */
-
 .contents-title {
     text-decoration: none;
 }
 
 .title-header {
-    /* background-color: #768DC6; */
     position: relative;
 }
 
@@ -69,8 +50,6 @@ header h1 {
     width: 100%;
     height: 480px;
     object-fit: cover;
-    /* position: relative; */
-    /* height: 480px; */
 }
 
 .title-header p {
@@ -87,13 +66,13 @@ header h1 {
 
 .section-title {
     font-size: 50px;
+    padding-bottom: 50px;
 }
 
 /* プロフィール */
 
 .profile, .section-skill, .works {
     padding-top: 100px;
-    /* padding-bottom: 100px; */
 }
 
 .profile-text {
@@ -102,19 +81,10 @@ header h1 {
     padding-top: 50px;
 }
 
-.p-icon {
-    /* display: flex; */
-    /* height: 288px; */
-}
-
 .p-icon img {
     border-radius: 50%;
     position: relative;
     margin: 0 auto;
-}
-
-.profile-text {
-    /* margin: 0 auto; */
 }
 
 /* skill */
@@ -124,7 +94,6 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
-    /* padding: 10px 100px; */
 }
 
 
@@ -135,11 +104,6 @@ header h1 {
 .skill h3 {
     letter-spacing: 0.12em;
     font-size: 25px;
-}
-
-.skill-desc {
-    /* flex-basis: calc(100% - 75px - 30px); */
-    /* text-align: center; */
 }
 
 /* SKILL-design*/
@@ -153,7 +117,6 @@ header h1 {
 
 .design {
     text-shadow: 1px 2px 3px #808080;
-    /* width: 100%; */
     border-radius: 0.5rem;
 }
 
@@ -165,7 +128,6 @@ header h1 {
     background: white;
     border-top: solid 5px #5d627b;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-    /* margin: 0 auto; */
 }
 
 .rating-html{
@@ -212,7 +174,6 @@ header h1 {
 
 .front {
     text-shadow: 1px 2px 3px #808080;
-    /* width: 32%; */
     margin: 0 auto;
     border-radius: 0.5rem;
 }
@@ -265,7 +226,6 @@ header h1 {
 
 .back {
     text-shadow: 1px 2px 3px #808080;
-    /* width: 32%; */
     margin: 0 auto;
     border-radius: 0.5rem;
 }
@@ -298,7 +258,6 @@ header h1 {
 
 .db {
     text-shadow: 1px 2px 3px #808080;
-    /* width: 32%; */
     margin: 0 auto;
     border-radius: 0.5rem;
 }
@@ -351,14 +310,7 @@ header h1 {
 
 .server {
     text-shadow: 1px 2px 3px #808080;
-    /* width: 32%; */
-    /* background-color: #768DC6; */
-    /* margin: 0 auto; */
     border-radius: 0.5rem;
-}
-
-.server table {
-    /* margin: 0 auto; */
 }
 
 .rating-xserv{
@@ -477,7 +429,6 @@ header h1 {
 
 .web article {
     width: calc(50% - 5px);
-    /* width: 33%; */
 }
 
 .web article figure {
@@ -491,7 +442,6 @@ header h1 {
 }
 
 .git{
-    /* display: flex; */
     padding-left: 0;
     list-style: none;
     max-width: 1000px;
@@ -548,6 +498,7 @@ header h1 {
 
 .information h1{
     font-size: 50px;
+    padding-bottom: 50px;
 }
 
 .info {
@@ -597,81 +548,4 @@ header h1 {
     margin: 0;
     padding-bottom: 20px;
     color: #fff;
-}
-
-
-
-/* Position and sizing of burger button */
-.bm-burger-button {
-    /* position: fixed;
-    width: 36px;
-    height: 30px;
-    left:50%;
-    margin-left: 600px;
-    top: 5%; */
-    /* display: none; */
-}
-
-.hum {
-    /* text-align:right; */
-}
-
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-    background: #373a47;
-}
-
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-    background: #005b99;
-}
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-    height: 24px;
-    width: 24px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-    background: #bdc3c7;
-}
-
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
-.bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-}
-
-/* General sidebar styles */
-.bm-menu {
-    background: white;
-    padding: 3.5em 1.5em 0;
-    font-size: 2.15em;
-}
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-    fill: #373a47;
-}
-
-/* Wrapper for item list */
-.bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-}
-
-/* Individual item */
-.bm-item {
-    display: inline-block;
-    text-decoration: none;
-    outline: none;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
 }

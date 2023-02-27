@@ -10,7 +10,7 @@ function App() {
                 {/* 画面遷移の記述 */}
         
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="sato/portfolio-app" element={<Home />} />
         </Routes>
         </div>
     );
